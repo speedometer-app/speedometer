@@ -7,4 +7,5 @@ Simple GPS Speedometer with Trip Meter functions
 - Color Presets
 - Speed Alerts
 - Movements stats
-
+###
+![](/screenshots/1.webp)
