@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoviewlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838"
+    android:clickable="true" >
+
+    <Button
+        android:id="@+id/buttonRec"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+    
+    <Button
+        android:id="@+id/buttonSet"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+
+ <LinearLayout
+     android:id="@+id/statsview"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentTop="true"
+     android:layout_toLeftOf="@+id/buttonSet"
+     android:layout_toRightOf="@+id/buttonRec"
+     android:weightSum="2"
+     android:orientation="vertical" >
+
+     <com.lb.auto_fit_textview.AutoResizeTextView
+         android:id="@+id/textTravelTime"
+         android:layout_height="match_parent"
+    	 android:layout_width="match_parent"
+         android:gravity="center"
+         android:textColor="#FFFFFFFF"
+         android:maxLines="1"
+         android:layout_weight="1"
+         android:textSize="200sp" />
+     
+     <com.lb.auto_fit_textview.AutoResizeTextView
+         android:id="@+id/textDist"
+         android:layout_height="match_parent"
+    	 android:layout_width="match_parent"
+         android:gravity="center"
+         android:textColor="#FFFFFFFF"
+         android:maxLines="1"
+         android:layout_weight="1"
+         android:textSize="200sp" />
+     </LinearLayout>
+
+</RelativeLayout>

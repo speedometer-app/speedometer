@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="units_key" translatable="false">units</string>
+    <string name="maxdisplayspeed_key" translatable="false">maxdisplayspeed</string>
+    <string name="scaletextsize_key" translatable="false">scaletextsize</string>
+    
+</resources>

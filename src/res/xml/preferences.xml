@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:key="catcommon" android:title="@string/menucat_common">
+        <ListPreference android:entries="@array/units_options" android:entryValues="@array/units_values" android:title="@string/settings_units_title" android:key="units" android:summary="%s" android:defaultValue="0"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catspeedometer" android:title="@string/menucat_speedometer">
+        <ListPreference android:key="maxdisplayspeed" android:title="@string/settings_maxdisplayspeed_title" android:summary="%s" android:defaultValue="120"/>
+        <ListPreference android:entries="@array/scaletextsize_options" android:entryValues="@array/scaletextsize_values" android:title="@string/settings_scaletextsize_title" android:key="scaletextsize" android:summary="%s" android:defaultValue="100"/>
+        <ListPreference android:entries="@array/needlemovement_options" android:entryValues="@array/needlemovement_values" android:title="@string/settings_needlemovement" android:key="needlemovement" android:summary="%s" android:defaultValue="1"/>
+        <CheckBoxPreference android:title="@string/settings_standbymodeenabled" android:defaultValue="false" android:key="standbymodeenabled"/>
+        <CheckBoxPreference android:title="@string/settings_fullscreenlandscape" android:defaultValue="false" android:key="fullscreenlandscape"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="cattripmeter" android:title="@string/menucat_tripmeter">
+        <CheckBoxPreference android:title="@string/settings_showseconds_title" android:defaultValue="true" android:key="showseconds"/>
+    	<CheckBoxPreference android:title="@string/settings_showmeters_title" android:defaultValue="true" android:key="showmeters"/>
+        <ListPreference android:title="@string/settings_distdecimals" android:key="distdecimals" android:summary="%s" android:defaultValue="0" android:entries="@array/distdecimals_options" android:entryValues="@array/distdecimals_values" />
+        <CheckBoxPreference android:title="@string/menu_showbuttonicons" android:defaultValue="true" android:key="showbuttonicons"/>
+        <CheckBoxPreference android:title="@string/settings_showspeedstats" android:defaultValue="false" android:key="showspeedstats"/>
+        <CheckBoxPreference android:title="@string/settings_showmovementtime" android:defaultValue="false" android:key="showmovementtime"/>
+        <CheckBoxPreference android:title="@string/settings_showmovementspeed" android:defaultValue="false" android:key="showmovementspeed"/>
+        <PreferenceScreen android:key="screenautopath" android:title="@string/settings_autopath">
+            <ListPreference android:title="@string/settings_autopathevery" android:key="autopathtime" android:summary="%s" android:defaultValue="0" android:entries="@array/autopathtime_options" android:entryValues="@array/autopathtime_values"  />
+            <ListPreference android:title="@string/settings_autopathevery" android:key="autopathdist" android:summary="%s" android:defaultValue="0" />
+            <Preference android:title="@string/settings_autopathsound" android:key="autopathsound" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="cattripmeterlog" android:title="@string/menucat_tripmeterlog">
+        <CheckBoxPreference android:title="@string/settings_showactionbar_title" android:defaultValue="true" android:key="showactionbar"/>
+        <Preference android:title="@string/settings_exportbutton_title" android:key="exportbutton" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catcolors" android:title="@string/menucat_colors">
+        <Preference android:title="@string/settings_showcolorsbutton" android:key="showcolorsbutton" />
+        <Preference android:title="@string/settings_resetcolorsbutton" android:key="resetcolorsbutton" />
+        <ListPreference android:title="@string/settings_colorpresets" android:key="colorpresetsbutton" android:entries="@array/colorpresets_options" android:entryValues="@array/colorpresets_values"/>
+        <ListPreference android:title="@string/settings_colorautotoggle" android:key="colorautotogglelux" android:entries="@array/colorautotoggle_options" android:entryValues="@array/colorautotoggle_values" android:summary="%s" android:defaultValue="0" />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_hand"
+            android:title="@string/color_hand"
+            android:defaultValue="#ffffff8f"
+            alphaSlider="true"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_containerbg"
+            android:title="@string/color_containerbg"
+            android:defaultValue="#ff000000"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_facebg"
+            android:title="@string/color_facebg"
+            android:defaultValue="#ff646464"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_rimshadow"
+            android:title="@string/color_rimshadow"
+            android:defaultValue="#ff000000"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_riminner"
+            android:title="@string/color_riminner"
+            android:defaultValue="#ffe6e6e6"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_rimouter"
+            android:title="@string/color_rimouter"
+            android:defaultValue="#ff000000"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_scale1"
+            android:title="@string/color_scale1"
+            android:defaultValue="#ffffffff"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_scale2"
+            android:title="@string/color_scale2"
+            android:defaultValue="#ffffffff"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_scaletext"
+            android:title="@string/color_scaletext"
+            android:defaultValue="#ffffffff"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_center1"
+            android:title="@string/color_center1"
+            android:defaultValue="#ffffffff"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_center2"
+            android:title="@string/color_center2"
+            android:defaultValue="#ff000000"
+            />
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="color_unitstext"
+            android:title="@string/color_unitstext"
+            android:defaultValue="#ffffffff"
+            />
+        <Preference android:title="@string/settings_colorpresetsmessage" android:key="showcolorpresetsmessage" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catspeedalerts" android:title="@string/menu_speedalerts">
+        <PreferenceScreen android:key="screenspeedalerts" android:title="@string/settings_speedalertsprofiles">
+            <PreferenceCategory android:title="@string/settings_speedalertsprofile1">
+                <ListPreference android:title="@string/settings_speedalertsspeed1" android:key="speedalert1_speed1" android:summary="%s" android:defaultValue="100" />
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert1_sound11" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert1_color11" android:summary="%s" android:defaultValue="3" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsspeed2" android:key="speedalert1_speed2" android:summary="%s" android:defaultValue="0"/>
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert1_sound21" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert1_color21" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <Preference android:title="@string/settings_speedalertssound" android:key="speedalert1_sound" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert1_color" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsrepeat" android:key="speedalert1_repeat" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsrepeat_options" android:entryValues="@array/speedalertsrepeat_values" />
+                <ListPreference android:title="@string/settings_speedalertsdelay" android:key="speedalert1_delay" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsdelay_options" android:entryValues="@array/speedalertsdelay_values" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/settings_speedalertsprofile2">
+                <ListPreference android:title="@string/settings_speedalertsspeed1" android:key="speedalert2_speed1" android:summary="%s" android:defaultValue="100" />
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert2_sound11" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert2_color11" android:summary="%s" android:defaultValue="3" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsspeed2" android:key="speedalert2_speed2" android:summary="%s" android:defaultValue="0"/>
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert2_sound21" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert2_color21" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <Preference android:title="@string/settings_speedalertssound" android:key="speedalert2_sound" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert2_color" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsrepeat" android:key="speedalert2_repeat" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsrepeat_options" android:entryValues="@array/speedalertsrepeat_values" />
+                <ListPreference android:title="@string/settings_speedalertsdelay" android:key="speedalert2_delay" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsdelay_options" android:entryValues="@array/speedalertsdelay_values" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/settings_speedalertsprofile3">
+                <ListPreference android:title="@string/settings_speedalertsspeed1" android:key="speedalert3_speed1" android:summary="%s" android:defaultValue="100" />
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert3_sound11" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert3_color11" android:summary="%s" android:defaultValue="3" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsspeed2" android:key="speedalert3_speed2" android:summary="%s" android:defaultValue="0"/>
+                <Preference android:title="@string/settings_speedalertssound1" android:key="speedalert3_sound21" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert3_color21" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <Preference android:title="@string/settings_speedalertssound" android:key="speedalert3_sound" />
+                <ListPreference android:title="@string/settings_speedalertscolor1" android:key="speedalert3_color" android:summary="%s" android:defaultValue="0" android:entries="@array/colorpresets_options1" android:entryValues="@array/colorpresets_values1" />
+                <ListPreference android:title="@string/settings_speedalertsrepeat" android:key="speedalert3_repeat" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsrepeat_options" android:entryValues="@array/speedalertsrepeat_values" />
+                <ListPreference android:title="@string/settings_speedalertsdelay" android:key="speedalert3_delay" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsdelay_options" android:entryValues="@array/speedalertsdelay_values" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="">
+                <Preference android:title="@string/settings_speedalertsmessage" android:key="showspeedalertsmessage" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <ListPreference android:title="@string/settings_speedalertsprofile" android:key="speedalertprofile" android:summary="%s" android:defaultValue="0" android:entries="@array/speedalertsprofile_options" android:entryValues="@array/speedalertsprofile_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catodomter" android:title="@string/menucat_odometer">
+        <CheckBoxPreference android:title="@string/settings_odometerenabled" android:defaultValue="false" android:key="odometerenabled"/>
+        <Preference android:title="@string/settings_odometerdistval" android:key="odometerdistval" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catadditional" android:title="@string/menucat_additional">
+        <CheckBoxPreference android:title="@string/settings_rgbpicker_title" android:defaultValue="false" android:key="rgbpicker"/>
+        <CheckBoxPreference android:title="@string/settings_hwaccel_title" android:defaultValue="true" android:key="hwaccel"/>
+        <ListPreference android:entries="@array/lang_values" android:entryValues="@array/lang_values" android:title="@string/settings_lang_title" android:key="lang" android:summary="%s" android:defaultValue="-"/>
+        <PreferenceScreen android:key="screenadditionalvars" android:title="@string/settings_tuning">
+            <EditTextPreference android:title="Required GPS accuracy, m" android:key="maxaccuracy" android:defaultValue="100" />
+            <EditTextPreference android:title="Min movement speed, m/s" android:key="minspeed" android:defaultValue="1" />
+            <EditTextPreference android:title="Max movement time interval, ms" android:key="maxtimediff" android:defaultValue="10000" />
+            <EditTextPreference android:title="Odometer: ignore if change greater, m" android:key="maxdistperupdate" android:defaultValue="200" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="catabout" android:title="@string/menucat_about">
+        <Preference android:title="@string/settings_share_title" android:key="sharebutton" />
+        <Preference android:title="@string/settings_rate_title" android:key="ratebutton" />
+        <Preference android:title="@string/settings_feedback_title" android:key="feedbackbutton" />
+        <Preference android:title="@string/settings_hint_title" android:key="hintbutton" />
+        <Preference android:title="@string/settings_about_title" android:key="aboutbutton" />
+    </PreferenceCategory>
+</PreferenceScreen>
