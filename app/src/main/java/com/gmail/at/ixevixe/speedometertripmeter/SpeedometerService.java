@@ -134,7 +134,7 @@ public class SpeedometerService extends Service
 		Intent notificationIntent = new Intent(this, MainActivity.class);
 		notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		notificationIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-		PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
+		PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE);
 		Notification.Builder notificationbuilder = null;
 		if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ){
 			NotificationChannel channel = new NotificationChannel("SpeedometerService", getString(R.string.servicenotification1), NotificationManager.IMPORTANCE_DEFAULT);

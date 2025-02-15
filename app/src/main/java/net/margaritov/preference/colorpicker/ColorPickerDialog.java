@@ -36,6 +36,8 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import com.gmail.at.ixevixe.speedometertripmeter.R;
+
 public class ColorPickerDialog
         extends
         Dialog
