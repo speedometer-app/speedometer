@@ -1,4 +1,5 @@
 # Speedometer EZ
+
 Simple GPS Speedometer with Trip Meter functions
 - Counts time/distance and saves to trip log
 - Configurable scale: up to 300 km/h or mph
@@ -6,6 +7,5 @@ Simple GPS Speedometer with Trip Meter functions
 - Color Presets
 - Speed Alerts
 - Movements stats
-
-## Screenshots
+###
 ![](/screenshots/1.webp)

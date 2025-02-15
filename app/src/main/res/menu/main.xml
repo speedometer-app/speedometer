@@ -1,0 +1,79 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_startmeter"
+        android:title="@string/menu_speedometer_startmeter" />
+    <item
+        android:id="@+id/menu_stopmeter"
+        android:title="@string/menu_speedometer_stopmeter" />
+    <item
+        android:id="@+id/menu_newsubtrack"
+        android:title="@string/menu_speedometer_newsubtrack" />
+    <item
+        android:id="@+id/menu_pathmode"
+        android:title="@string/menu_speedometer_pathmode" />
+    <item
+        android:id="@+id/menu_tripmeterlog"
+        android:title="@string/menu_speedometer_tripmeterlog" />
+    <item
+        android:id="@+id/menu_colorpresets"
+        android:title="@string/menu_speedometer_colorlist" >
+        <menu>
+            <item
+                android:id="@+id/menu_colorpreset1"
+                android:title="#1" />
+            <item
+                android:id="@+id/menu_colorpreset2"
+                android:title="#2" />
+            <item
+                android:id="@+id/menu_colorpreset3"
+                android:title="#3" />
+            <item
+                android:id="@+id/menu_colorpreset4"
+                android:title="#4" />
+            <item
+                android:id="@+id/menu_colorpreset5"
+                android:title="#5" />
+            <item
+                android:id="@+id/menu_colorsettings"
+                android:title="@string/menu_colorsettings" />
+            <item
+                android:id="@+id/menu_colorautotoggle"
+                android:title="@string/menu_speedometer_autotoggle"
+                android:checkable="true" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_speedalerts"
+        android:title="@string/menu_speedalerts2" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_speedalert0"
+                    android:title="-" />
+                <item
+                    android:id="@+id/menu_speedalert1"
+                    android:title="@string/settings_speedalertsprofile1" />
+                <item
+                    android:id="@+id/menu_speedalert2"
+                    android:title="@string/settings_speedalertsprofile2" />
+                <item
+                    android:id="@+id/menu_speedalert3"
+                    android:title="@string/settings_speedalertsprofile3" />
+            </group>
+            <item
+                android:id="@+id/menu_speedalertssettings"
+                android:title="@string/menu_speedalertssettings" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/menu_speedometer_settings" />
+    <item
+        android:id="@+id/menu_hint"
+        android:title="@string/menu_speedometer_hint" />
+    <item
+        android:id="@+id/menu_gpsinfo"
+        android:enabled="false" />
+
+</menu>

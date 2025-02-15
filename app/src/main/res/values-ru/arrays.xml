@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="units_options">
+        <item >Международные (км, м)</item>
+        <item >Британские (мили, футы)</item>
+    </string-array>
+    <string-array name="units_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+    <string-array name="scaletextsize_options">
+        <item >Маленький</item>
+        <item >Мелкий</item>
+        <item >Средний</item>
+        <item >Крупный </item>
+        <item >Большой</item>
+    </string-array>
+    <string-array name="scaletextsize_values">
+        <item >70</item>
+        <item >80</item>
+        <item >90</item>
+        <item >100</item>
+        <item >110</item>
+    </string-array>
+    <string-array name="needlemovement_options">
+        <item >Мгновенное</item>
+        <item >Отзывчивое</item>
+        <item >Пружинистое</item>
+        <item >Сглаженое</item>
+    </string-array>
+    <string-array name="needlemovement_values">
+        <item >3</item>
+        <item >2</item>
+        <item >1</item>
+        <item >0</item>
+    </string-array>
+    <string-array name="speedalertsrepeat_options">
+        <item >-</item>
+        <item >каждые 15 секунд</item>
+        <item >каждые 30 секунд</item>
+        <item >каждую минуту</item>
+        <item >каждые 5 минут</item>
+        <item >каждые 15 минут</item>
+    </string-array>
+    <string-array name="speedalertsdelay_options">
+        <item >-</item>
+        <item >5 секунд</item>
+        <item >15 секунд</item>
+        <item >30 секунд</item>
+        <item >1 минута</item>
+    </string-array>
+    <string-array name="autopathtime_options">
+        <item >-</item>
+        <item >10 минут</item>
+        <item >15 минут</item>
+        <item >30 минут</item>
+        <item >1 час</item>
+        <item >2 часа</item>
+        <item >3 часа</item>
+        <item >6 часов</item>
+        <item >12 часов</item>
+        <item >24 часа</item>
+    </string-array>
+</resources>
