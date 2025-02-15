@@ -11,6 +11,7 @@
     <string name="settings_share_title">Compartir</string>
     <string name="settings_rate_title">Califica la aplicación</string>
     <string name="settings_feedback_title">Enviar comentarios por correo electrónico</string>
+    <string name="settings_siteurl">Página web</string>
     <string name="settings_hint_title">Ayuda</string>
     <string name="settings_about_title">Acerca de la aplicación</string>
     <string name="kmh">km/h</string>

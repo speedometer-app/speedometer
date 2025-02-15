@@ -157,8 +157,9 @@
     </PreferenceCategory>
     <PreferenceCategory android:key="catabout" android:title="@string/menucat_about">
         <Preference android:title="@string/settings_share_title" android:key="sharebutton" />
-        <Preference android:title="@string/settings_rate_title" android:key="ratebutton" />
+<!--        <Preference android:title="@string/settings_rate_title" android:key="ratebutton" />-->
         <Preference android:title="@string/settings_feedback_title" android:key="feedbackbutton" />
+        <Preference android:title="@string/settings_siteurl" android:key="siteurl" />
         <Preference android:title="@string/settings_hint_title" android:key="hintbutton" />
         <Preference android:title="@string/settings_about_title" android:key="aboutbutton" />
     </PreferenceCategory>

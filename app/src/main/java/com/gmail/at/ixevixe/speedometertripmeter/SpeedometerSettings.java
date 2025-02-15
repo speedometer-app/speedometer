@@ -276,7 +276,7 @@ public class SpeedometerSettings extends PreferenceActivity implements OnSharedP
 					try { 
 					    Intent i = new Intent(Intent.ACTION_SEND);  
 					    i.setType("text/plain");
-					    i.putExtra(Intent.EXTRA_TEXT, "\nGPS Speedometer&TripMeter App\nhttps://play.google.com/store/apps/details?id=com.gmail.at.ixevixe.speedometertripmeter\n\n");  
+					    i.putExtra(Intent.EXTRA_TEXT, "\nSpeedometer EZ - GPS Speedometer&TripMeter App\nhttps://github.com/speedometer-app/speedometer\n\n");
 					    startActivity(Intent.createChooser(i, ""));
 					} catch(Exception e) { 
 						g.showerror(getApplicationContext(), e.getMessage());
@@ -286,8 +286,7 @@ public class SpeedometerSettings extends PreferenceActivity implements OnSharedP
 			    }
 		});
 
-        
-        findPreference("ratebutton").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+        /*findPreference("ratebutton").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 			@Override
 			public boolean onPreferenceClick(Preference preference) {
 				Context context = SpeedometerSettings.this;
@@ -299,7 +298,7 @@ public class SpeedometerSettings extends PreferenceActivity implements OnSharedP
 					
 					return true;
 			    }
-		});
+		});*/
         
         findPreference("feedbackbutton").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 			@Override
@@ -313,6 +312,15 @@ public class SpeedometerSettings extends PreferenceActivity implements OnSharedP
 					
 					return true;
 			    }
+		});
+
+		findPreference("siteurl").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				Toast.makeText(getApplicationContext(), "https://github.com/speedometer-app/speedometer", Toast.LENGTH_LONG).show();
+
+				return true;
+			}
 		});
 
         findPreference("showcolorsbutton").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {

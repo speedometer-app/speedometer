@@ -79,7 +79,7 @@ public class TrackListActivity extends ListActivity {
 		}
 		
 		if( !recordingactive && g.defaultpreferences != null ){
-			AppRater.applaunched(this, g.defaultpreferences);
+//			AppRater.applaunched(this, g.defaultpreferences);
 		}
 	}
 		

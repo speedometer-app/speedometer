@@ -10,8 +10,8 @@ android {
         applicationId "com.gmail.at.ixevixe.speedometertripmeter"
         minSdk 14
         targetSdk 35
-        versionCode 390
-        versionName "3.9"
+        versionCode 9000000
+        versionName "900"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

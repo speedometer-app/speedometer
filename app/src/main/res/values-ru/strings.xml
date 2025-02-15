@@ -11,6 +11,7 @@
     <string name="settings_share_title">Поделиться</string>
     <string name="settings_rate_title">Оценить</string>
     <string name="settings_feedback_title">Отправать отзыв</string>
+    <string name="settings_siteurl">Перейти на сайт</string>
     <string name="settings_hint_title">Подсказка</string>
     <string name="settings_about_title">Версия</string>
     <string name="kmh">км/ч</string>
